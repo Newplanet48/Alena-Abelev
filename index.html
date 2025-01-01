@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional hair salon services.">
+    <title>Hair Salon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hair Salon</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reservations">Reservations</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Hair Salon</h2>
+            <p>Transform your look with our professional services.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Haircuts</li>
+                <li>Coloring</li>
+                <li>Styling</li>
+                <li>Extensions</li>
+            </ul>
+        </section>
+
+        <section id="reservations">
+            <h2>Make a Reservation</h2>
+            <form id="reservationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="service">Service:</label>
+                <select id="service" name="service">
+                    <option value="haircut">Haircut</option> 
+                    <option value="coloring">Coloring</option>
+                    <option value="styling">Styling</option>
+                    <option value="extensions">Extensions</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
